@@ -148,7 +148,6 @@ behavior:"smooth"
 
 document.getElementById("abrirInvitacion").addEventListener("click", () => {
 
-```
 document.getElementById("intro").style.display = "none";
 
 const musica = document.getElementById("musicaFondo");
@@ -156,6 +155,5 @@ const musica = document.getElementById("musicaFondo");
 if(musica){
     musica.play();
 }
-```
 
 });
