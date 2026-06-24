@@ -150,7 +150,6 @@ const botonAbrir = document.getElementById("abrirInvitacion");
 
 if (botonAbrir) {
 
-```
 botonAbrir.addEventListener("click", function() {
 
     const intro = document.getElementById("intro");
@@ -166,6 +165,5 @@ botonAbrir.addEventListener("click", function() {
     }
 
 });
-```
 
 }
