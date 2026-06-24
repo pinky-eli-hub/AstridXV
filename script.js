@@ -146,24 +146,3 @@ top:0,
 behavior:"smooth"
 });
 
-const botonAbrir = document.getElementById("abrirInvitacion");
-
-if (botonAbrir) {
-
-botonAbrir.addEventListener("click", function() {
-
-    const intro = document.getElementById("intro");
-
-    if (intro) {
-        intro.style.display = "none";
-    }
-
-    const musica = document.getElementById("musicaFondo");
-
-    if (musica) {
-        musica.play().catch(() => {});
-    }
-
-});
-
-}
