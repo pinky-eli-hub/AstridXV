@@ -68,8 +68,6 @@ const iconos = [
 "💫"
 ];
 
-petalo.innerHTML =
-iconos[Math.floor(Math.random() * iconos.length)];
 
 petalo.style.left =
 Math.random() * window.innerWidth + "px";
