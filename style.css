@@ -15,6 +15,43 @@ font-family:'Montserrat',sans-serif;
 overflow-x:hidden;
 }
 
+#intro{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#071f63;
+z-index:99999;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.intro-content h1{
+font-family:'Great Vibes',cursive;
+font-size:4rem;
+color:#ffd700;
+}
+
+.intro-content h2{
+color:white;
+margin:20px 0;
+}
+
+#abrirInvitacion{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ffd700;
+color:#071f63;
+font-weight:bold;
+cursor:pointer;
+font-size:1rem;
+}
+
 /* PORTADA */
 
 .hero{
@@ -176,9 +213,9 @@ margin-top:30px;
 .grid img{
 width:100%;
 height:auto;
-max-height:550px;
+max-height:600px;
 object-fit:contain;
-background:rgba(255,255,255,.05);
+background:rgba(255,255,255,.08);
 border-radius:20px;
 padding:10px;
 }
@@ -192,6 +229,26 @@ transform:scale(1.05);
 .vestimenta{
 background:#071f63;
 color;
+}
+
+.ticket{
+
+max-width:500px;
+margin:auto;
+
+padding:30px;
+
+border:2px dashed #ffd700;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.05);
+
+}
+
+.ticket h3{
+color:#ffd700;
+margin-bottom:15px;
 }
 
 /* WHATSAPP */
