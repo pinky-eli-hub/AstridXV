@@ -68,6 +68,8 @@ const iconos = [
 "💫"
 ];
 
+petalo.innerHTML =
+iconos[Math.floor(Math.random() * iconos.length)];
 
 petalo.style.left =
 Math.random() * window.innerWidth + "px";
@@ -149,8 +151,11 @@ document.getElementById("abrirInvitacion").addEventListener("click", () => {
 ```
 document.getElementById("intro").style.display = "none";
 
-document.getElementById("musicaFondo").play();
-```
+const musica = document.getElementById("musicaFondo");
 
+if(musica){
+    musica.play();
+}
+```
 
 });
