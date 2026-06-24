@@ -490,3 +490,49 @@ transition:.3s;
 transform:scale(1.05);
 
 }
+
+.ticket{
+
+max-width:550px;
+
+margin:auto;
+
+padding:40px;
+
+background:
+linear-gradient(
+135deg,
+rgba(247,215,116,.15),
+rgba(255,255,255,.05)
+);
+
+border:2px solid #f7d774;
+
+border-radius:25px;
+
+box-shadow:
+0 0 30px rgba(247,215,116,.2);
+
+}
+
+.ticket-top{
+
+font-size:.9rem;
+
+letter-spacing:4px;
+
+margin-bottom:15px;
+
+color:#f7d774;
+
+}
+
+.ticket h3{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+color:#f7d774;
+
+}
