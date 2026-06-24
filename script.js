@@ -146,14 +146,26 @@ top:0,
 behavior:"smooth"
 });
 
-document.getElementById("abrirInvitacion").addEventListener("click", () => {
+const botonAbrir = document.getElementById("abrirInvitacion");
 
-document.getElementById("intro").style.display = "none";
+if (botonAbrir) {
 
-const musica = document.getElementById("musicaFondo");
+```
+botonAbrir.addEventListener("click", function() {
 
-if(musica){
-    musica.play();
-}
+    const intro = document.getElementById("intro");
+
+    if (intro) {
+        intro.style.display = "none";
+    }
+
+    const musica = document.getElementById("musicaFondo");
+
+    if (musica) {
+        musica.play().catch(() => {});
+    }
 
 });
+```
+
+}
