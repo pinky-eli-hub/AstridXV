@@ -144,12 +144,13 @@ top:0,
 behavior:"smooth"
 });
 
-document
-.getElementById("abrirInvitacion")
-.addEventListener("click",()=>{
+document.getElementById("abrirInvitacion").addEventListener("click", () => {
 
-document
-.getElementById("intro")
-.style.display="none";
+```
+document.getElementById("intro").style.display = "none";
+
+document.getElementById("musicaFondo").play();
+```
+
 
 });
