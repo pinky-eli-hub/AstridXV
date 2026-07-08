@@ -1,538 +1,2253 @@
-	*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+/*======================================================
+CSS-01 | RESET + VARIABLES + BODY
+======================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --azul-1:#03122F;
+    --azul-2:#061B4D;
+    --azul-3:#0A2E73;
+
+    --dorado:#D4AF37;
+    --dorado-claro:#F2D675;
+
+    --blanco:#FDFDFC;
+    --marfil:#F8F6F0;
+
+    --sombra:rgba(0,0,0,.45);
+
 }
 
 body{
-background:#071f63;
-color:#f5f2eb;
-font-family:'Montserrat',sans-serif;
-overflow-x:hidden;
+
+    background-image:url("img/fondos/fondo-premium.png");
+
+    background-repeat:repeat-y;
+
+    background-size:100% auto;
+
+    background-position:top center;
+
+    background-attachment:fixed;
+
+    background-color:#061B4D;
+
 }
 
-#intro{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#071f63;
-z-index:99999;
+/*======================================================
+BLOQUEO DE SCROLL
+======================================================*/
 
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+body.bloqueado{
+
+    overflow:hidden;
+
+    height:100vh;
+
 }
 
-.intro-content h1{
-font-family:'Great Vibes',cursive;
-font-size:4rem;
-color:#f7d774;
-}
-
-.intro-content h2{
-color:#f5f2eb;
-margin:20px 0;
-}
-
-#abrirInvitacion{
-padding:15px 35px;
-border:none;
-border-radius:50px;
-background:#f7d774;
-color:#071f63;
-font-weight:bold;
-cursor:pointer;
-font-size:1rem;
-}
-
-/* PORTADA */
-
-.hero{
-position:relative;
-width:100%;
-min-height:100vh;
-overflow:visible;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.portada{
-width:100%;
-max-width:1400px;
-height:auto;
-display:block;
-margin:auto;
-}
-
-.overlay{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-.overlay{
-background:linear-gradient(
-rgba(7,31,99,.25),
-rgba(7,31,99,.55)
-);
-}
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-text-align:center;
-padding:20px;
-color:white;
-}
-
-.overlay h1{
-font-family:'Great Vibes',cursive;
-font-size:4.2rem;
-margin-bottom:25px;
-text-shadow:0 0 20px rgba(0,0,0,.6);
-line-height:1.2;
-}
-
-.overlay h2{
-font-size:2rem;
-letter-spacing:3px;
-margin-bottom:35px;
-color:#f7d774;
-}
-
-.frase{
-max-width:700px;
-font-size:1.3rem;
-line-height:1.8;
-margin-bottom:30px;
-padding:0 20px;
-}
-
-.fecha{
-font-size:1.5rem;
-font-weight:bold;
-}
-
-/* SECCIONES */
+/*======================================================
+CSS-02 | SECCIONES
+======================================================*/
 
 section{
-padding:80px 20px;
-text-align:center;
-}
 
-section h2{
-font-family:'Great Vibes',cursive;
-font-size:3rem;
-color:#f7d774;
-margin-bottom:25px;
-}
+    width:100%;
 
-section p{
-font-size:1.1rem;
-line-height:1.8;
-}
+    min-height:100vh;
 
-/* CONTADOR */
+    padding:90px 25px;
 
-.contador{
-background:#071f63;
-padding:80px 20px;
-}
+    display:flex;
 
-#countdown{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:30px;
-}
+    flex-direction:column;
 
-#countdown div{
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(8px);
-padding:20px;
-border-radius:20px;
-width:130px;
-border:1px solid rgba(255,255,255,.2);
-}
+    justify-content:center;
 
-#countdown span{
-font-size:2.4rem;
-font-weight:bold;
-color:#f7d774;
-}
+    align-items:center;
 
-/* EVENTOS */
+    position:relative;
 
-.evento{
-background:#071f63;
-color:#f5f2eb;
-padding:80px 20px;
-}
-
-.boton{
-display:inline-block;
-margin-top:20px;
-padding:14px 30px;
-
-background:#9c6ade;
-color:#f5f2eb;
-
-text-decoration:none;
-border-radius:40px;
-
-transition:.3s;
-}
-
-.boton:hover{
-transform:scale(1.05);
-background:#7d4ac5;
-}
-
-/* GALERIA */
-
-.galeria{
-background:#071f63;
-padding:80px 20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-margin-top:30px;
-}
-
-.grid img{
-width:100%;
-height:auto;
-max-height:600px;
-object-fit:contain;
-background:rgba(255,255,255,.08);
-border-radius:20px;
-padding:10px;
-}
-
-.grid img:hover{
-transform:scale(1.05);
-}
-
-/* VESTIMENTA */
-
-.vestimenta{
-background:#071f63;
-color;
-}
-
-.ticket{
-
-max-width:550px;
-margin:auto;
-
-padding:40px;
-
-background:
-linear-gradient(
-135deg,
-rgba(247,215,116,.15),
-rgba(255,255,255,.05)
-);
-
-border:2px solid #f7d774;
-
-border-radius:25px;
-
-box-shadow:
-0 0 30px rgba(247,215,116,.2);
+    overflow:hidden;
 
 }
 
-.ticket-top{
+/*======================================================
+CSS-03 | TIPOGRAFÍAS
+======================================================*/
 
-font-size:.9rem;
-letter-spacing:4px;
+h1{
 
-margin-bottom:15px;
+    font-family:'Great Vibes',cursive;
 
-color:#f7d774;
+    font-size:5.5rem;
 
-}
+    color:var(--dorado);
 
-.ticket h3{
+    font-weight:400;
 
-font-size:2rem;
-
-margin-bottom:20px;
-
-color:#f7d774;
+    text-align:center;
 
 }
 
-/* WHATSAPP */
+h2{
 
-.whatsapp{
-display:inline-block;
-padding:15px 35px;
+    font-family:'Great Vibes',cursive;
 
-background:#25D366;
-color:#f5f2eb;
+    font-size:3.8rem;
 
-font-size:1.1rem;
-font-weight:bold;
+    color:var(--dorado);
 
-text-decoration:none;
-border-radius:50px;
+    font-weight:400;
 
-transition:.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.05);
-}
-
-/* FINAL */
-
-.final{
-background:#071f63;
-color:#f5f2eb;
-border-top:1px solid rgba(255,215,0,.3);
-}
-
-.final h2{
-color:#f5f2eb;
-}
-
-/* PETALOS */
-
-.petalos{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-z-index:999;
-overflow:hidden;
-}
-
-.petalo{
-position:absolute;
-top:-50px;
-font-size:24px;
-animation:caer linear forwards;
-opacity:.9;
-}
-
-@keyframes caer{
-
-0%{
-transform:translateY(-100px) rotate(0deg);
-opacity:1;
-}
-
-100%{
-transform:translateY(110vh) rotate(360deg);
-opacity:0;
-}
+    text-align:center;
 
 }
 
-/* RESPONSIVE */
+h3{
 
-@media(max-width:768px){
+    font-family:'Cormorant Garamond',serif;
 
-.overlay h1{
-font-size:3rem;
-}
+    color:var(--blanco);
 
-.overlay h2{
-font-size:1.4rem;
-}
+    font-size:2rem;
 
-.frase{
-font-size:1rem;
-}
+    font-weight:500;
 
-section h2{
-font-size:2.2rem;
-}
+    letter-spacing:2px;
 
-#countdown div{
-width:100px;
-}
+    text-align:center;
 
 }
 
-.mensaje,
-.padrinos,
-.evento,
-.galeria,
-.vestimenta,
-.confirmacion,
-.pase{
+p{
 
-max-width:1200px;
-margin:40px auto;
+    font-family:'Cormorant Garamond',serif;
 
-background:rgba(255,255,255,.05);
+    color:var(--blanco);
 
-backdrop-filter:blur(8px);
+    font-size:1.45rem;
 
-border:1px solid rgba(247,215,116,.2);
+    line-height:1.9;
 
-border-radius:30px;
-
-padding:60px 30px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.25);
+    text-align:center;
 
 }
 
-#intro{
+/*======================================================
+CSS-04 | COMPONENTES PREMIUM
+======================================================*/
 
-position:fixed;
+.tituloPremium{
 
-top:0;
-left:0;
+    display:flex;
 
-width:100%;
-height:100%;
+    align-items:center;
 
-background:
-linear-gradient(
-135deg,
-#071f63,
-#0d2f8f
-);
+    justify-content:center;
 
-z-index:99999;
-
-display:flex;
-
-justify-content:center;
-align-items:center;
-
-text-align:center;
+    gap:18px;
 
 }
 
-.intro-content{
+.estrella{
 
-padding:40px;
+    color:var(--dorado);
 
-background:
-rgba(255,255,255,.05);
+    font-size:2rem;
 
-border:
-
-1px solid rgba(247,215,116,.3);
-
-border-radius:30px;
-
-backdrop-filter:blur(10px);
+    animation:brillo 2.5s infinite;
 
 }
 
-.intro-content h1{
+.lineaPremium{
 
-font-family:'Great Vibes',cursive;
+    display:flex;
 
-font-size:4rem;
+    align-items:center;
 
-color:#f7d774;
+    justify-content:center;
 
-margin-bottom:20px;
+    gap:18px;
 
-}
-
-.intro-content h2{
-
-color:#f5f2eb;
-
-margin-bottom:30px;
+    margin:28px 0 45px;
 
 }
 
-#abrirInvitacion{
+.lineaPremium span{
 
-padding:15px 40px;
+    width:180px;
 
-border:none;
+    height:2px;
 
-border-radius:50px;
-
-background:#f7d774;
-
-color:#071f63;
-
-font-weight:bold;
-
-font-size:1rem;
-
-cursor:pointer;
-
-transition:.3s;
+    background:linear-gradient(
+    to right,
+    transparent,
+    var(--dorado),
+    transparent);
 
 }
 
-#abrirInvitacion:hover{
+.adornoCentral{
 
-transform:scale(1.05);
+    color:var(--dorado);
 
-}
+    font-size:2rem;
 
-.ticket{
-
-max-width:550px;
-
-margin:auto;
-
-padding:40px;
-
-background:
-linear-gradient(
-135deg,
-rgba(247,215,116,.15),
-rgba(255,255,255,.05)
-);
-
-border:2px solid #f7d774;
-
-border-radius:25px;
-
-box-shadow:
-0 0 30px rgba(247,215,116,.2);
+    text-shadow:0 0 12px rgba(212,175,55,.35);
 
 }
 
-.ticket-top{
+/*======================================================
+CSS-05 | BIENVENIDA PREMIUM
+======================================================*/
 
-font-size:.9rem;
+#bienvenida{
 
-letter-spacing:4px;
+    min-height:115vh;
 
-margin-bottom:15px;
+    background:transparent;
 
-color:#f7d774;
+    overflow:visible;
+
+    padding-bottom:180px;
 
 }
 
-.ticket h3{
+.contenidoBienvenida{
 
-font-size:2rem;
+    position:relative;
 
-margin-bottom:20px;
+    width:650px;
 
-color:#f7d774;
+    max-width:92%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.sobre{
+
+    width:120%;
+
+    display:block;
+
+    position:relative;
+
+    z-index:2;
+
+    cursor:pointer;
+
+    transition:1s ease;
+
+    filter:drop-shadow(0 20px 35px rgba(0,0,0,.45));
+
+}
+
+.sello{
+
+    position:absolute;
+
+    width:180px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:5;
+
+    cursor:pointer;
+
+    transition:.5s ease;
+
+    filter:
+    drop-shadow(0 0 10px rgba(212,175,55,.55));
+
+}
+
+.sello:hover{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+.tarjeta{
+
+    position:absolute;
+
+    width:340px;
+
+    left:50%;
+
+    top:-120px;
+
+    transform:translate(-50%,220px);
+
+    opacity:0;
+
+    z-index:4;
+
+    transition:1.2s ease;
+
+}
+
+.portadaTarjeta{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.textoAbrir{
+
+    position:absolute;
+
+    bottom:-0px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:var(--blanco);
+
+    font-size:1.35rem;
+
+    letter-spacing:1px;
+
+    transition:.6s ease;
+
+}
+
+/*======================================================
+CSS-06 | PORTADA PREMIUM
+======================================================*/
+
+#portada{
+
+    background:transparent;
+
+}
+
+#portada h1{
+
+    margin-top:25px;
+
+    margin-bottom:30px;
+
+    font-size:6rem;
+
+    line-height:1.05;
+
+    color:var(--dorado);
+
+    text-shadow:
+    0 0 12px rgba(212,175,55,.18),
+    0 0 30px rgba(212,175,55,.08);
+
+}
+
+.frasePrincipal{
+
+    max-width:820px;
+
+    margin-top:10px;
+
+    color:var(--blanco);
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    font-weight:400;
+
+    letter-spacing:.8px;
+
+}
+
+/*------------------------------------
+TÍTULO PREMIUM
+------------------------------------*/
+
+.tituloPremium{
+
+    margin-bottom:10px;
+
+}
+
+.tituloPremium h2{
+
+    font-size:4rem;
+
+    color:var(--dorado);
+
+}
+
+/*------------------------------------
+LÍNEA DECORATIVA
+------------------------------------*/
+
+.lineaPremium{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.lineaPremium span{
+
+    width:230px;
+
+    height:1px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        var(--dorado),
+        transparent
+    );
+
+}
+
+.adornoCentral{
+
+    color:var(--dorado);
+
+    font-size:2rem;
+
+    text-shadow:0 0 15px rgba(212,175,55,.45);
+
+}
+
+/*------------------------------------
+ESTRELLAS
+------------------------------------*/
+
+.estrella{
+
+    color:var(--dorado);
+
+    font-size:2rem;
+
+    text-shadow:
+    0 0 12px rgba(212,175,55,.45);
+
+}
+
+/*======================================================
+CSS-07 | MARCO PREMIUM
+======================================================*/
+
+.marcoPremium{
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+    padding:80px 60px;
+
+    position:relative;
+
+    border:1px solid rgba(212,175,55,.45);
+
+    border-radius:28px;
+
+    background:
+
+    linear-gradient(
+    rgba(255,255,255,.015),
+    rgba(255,255,255,.03));
+
+    backdrop-filter:blur(5px);
+
+    box-shadow:
+
+    0 0 40px rgba(212,175,55,.08),
+
+    inset 0 0 30px rgba(255,255,255,.02);
+
+}
+
+/*-------------------------
+ESQUINAS
+-------------------------*/
+
+.marcoPremium::before,
+
+.marcoPremium::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:80px;
+
+    height:80px;
+
+    border-color:var(--dorado);
+
+    opacity:.7;
+
+}
+
+.marcoPremium::before{
+
+    top:18px;
+
+    left:18px;
+
+    border-top:2px solid;
+
+    border-left:2px solid;
+
+    border-radius:16px 0 0 0;
+
+}
+
+.marcoPremium::after{
+
+    right:18px;
+
+    bottom:18px;
+
+    border-right:2px solid;
+
+    border-bottom:2px solid;
+
+    border-radius:0 0 16px 0;
+
+}
+
+/*-------------------------
+ADORNO SUPERIOR
+-------------------------*/
+
+.marcoTitulo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+.marcoTitulo span{
+
+    color:var(--dorado);
+
+    font-size:2rem;
+
+}
+
+.marcoTitulo h2{
+
+    margin:0;
+
+}
+
+/*======================================================
+CSS-08 | FLECHA SCROLL
+======================================================*/
+
+#portada{
+
+    min-height:140px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px 0 80px;
+
+    background:transparent;
+
+}
+
+.flechaScroll{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.separadorPremium{
+
+    width:560px;
+
+    display:block;
+
+    margin-bottom:22px;
+
+    filter:drop-shadow(0 0 10px rgba(212,175,55,.35));
+
+}
+
+.flechaScroll span{
+
+    color:var(--dorado);
+
+    font-size:1.8rem;
+
+    margin-bottom:12px;
+
+    text-shadow:0 0 10px rgba(212,175,55,.45);
+
+}
+
+.flechaAnimada{
+
+    color:var(--dorado);
+
+    font-size:2rem;
+
+    margin-top:5px;
+
+    animation:bajar 2s infinite;
+
+}
+
+@keyframes bajar{
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+    50%{
+
+        transform:translateY(12px);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+}
+
+/*======================================================
+FLECHA PREMIUM
+======================================================*/
+
+.flechaPremium{
+
+    width:350px;
+
+    display:block;
+
+    margin:-180px auto 0;
+
+    filter:drop-shadow(0 0 18px rgba(212,175,55,.55));
+
+    animation:flechaBaja 2.3s ease-in-out infinite;
+
+}
+
+.flechaScroll{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:-8px;
+
+}
+
+@keyframes flechaBaja{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*======================================================
+CSS-09 | CONTADOR PREMIUM
+======================================================*/
+
+#contador{
+
+    background:transparent;
+
+}
+
+#contador > *{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+    h2.tituloContador{
+
+    display:block;
+
+    width:100%;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.8rem;
+
+    font-weight:400;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    line-height:.9;
+
+    margin:0 0 45px 0;
+
+    text-shadow:
+        0 0 8px rgba(212,175,55,.45),
+        0 0 18px rgba(212,175,55,.25),
+        0 0 35px rgba(212,175,55,.12);
+
+}
+
+.fraseContador{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:55px auto 25px;
+
+    text-align:center;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3rem;
+
+    font-weight:400;
+
+    line-height:1.4;
+
+    letter-spacing:.5px;
+
+    color:#F8F6F0;
+
+    text-shadow:
+
+        0 0 8px rgba(255,255,255,.12);
+
+}
+
+#contador .separadorPremium{
+
+    width:520px;
+
+    margin:35px auto 0;
+
+    display:block;
+
+}
+
+.contenedorContador{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+}
+
+.cajaTiempo{
+
+    width:160px;
+
+    height:185px;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:rgba(8,36,92,.18);
+
+    border-radius:26px;
+
+    transition:.35s ease;
+
+}
+
+.marcoContador{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    pointer-events:none;
+
+    z-index:1;
+
+    transform:scale(.92);
+
+}
+
+.cajaTiempo:hover{
+
+    transform:translateY(-6px) scale(1.02);
+
+    filter:
+
+    drop-shadow(0 0 18px rgba(212,175,55,.25));
+
+}
+
+.cajaTiempo span{
+
+    position:relative;
+
+    z-index:2;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:4.5rem;
+
+    font-weight:700;
+
+    color:var(--dorado);
+
+    text-shadow:
+
+0 0 8px rgba(212,175,55,.45),
+
+0 0 18px rgba(212,175,55,.20);
+
+}
+
+.cajaTiempo small{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:16px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:1.35rem;
+
+    font-weight:500;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#F8F6F0;
+
+    text-shadow:
+
+    0 0 4px rgba(255,255,255,.15);
+
+}
+
+/*======================================================
+ESTADO INICIAL DE LAS SECCIONES
+======================================================*/
+
+#contador{
+
+    display:none;
+
+}
+
+/*======================================================
+ESTRELLAS CONTADOR
+======================================================*/
+
+.estrellasContador{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.estrellasContador span{
+
+    position:absolute;
+
+    width:4px;
+
+    height:4px;
+
+    background:var(--dorado);
+
+    border-radius:50%;
+
+    box-shadow:0 0 10px rgba(212,175,55,.8);
+
+    animation:destello 4s infinite ease-in-out;
+
+}
+
+.estrellasContador span:nth-child(1){top:10%;left:8%;}
+.estrellasContador span:nth-child(2){top:18%;right:12%;}
+.estrellasContador span:nth-child(3){top:38%;left:15%;}
+.estrellasContador span:nth-child(4){top:55%;right:8%;}
+.estrellasContador span:nth-child(5){bottom:28%;left:12%;}
+.estrellasContador span:nth-child(6){bottom:18%;right:18%;}
+.estrellasContador span:nth-child(7){bottom:10%;left:45%;}
+.estrellasContador span:nth-child(8){top:28%;left:55%;}
+
+/*======================================================
+CSS-10 | MENSAJE
+======================================================*/
+
+#mensaje{
+
+    background:transparent;
+
+}
+
+.tituloMensaje{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:5.8rem;
+
+    font-weight:400;
+
+    color:var(--dorado);
+
+    margin-bottom:60px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+/*======================================================
+TÍTULO PADRES
+======================================================*/
+
+.tituloPadres{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.frasePadres{
+
+    width:100%;
+
+    max-width:820px;
+
+    margin:0 auto 70px auto;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville', serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+    text-align:center;
+
+}
+
+/*======================================================
+SECCIÓN PADRES
+======================================================*/
+
+#padres{
+
+    padding:10px 20px 100px;
+
+    text-align:center;
+
+}
+
+.textoMensaje{
+
+    width:100%;
+
+    max-width:820px;
+
+    margin:0 auto 70px;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+    text-align:center;
+
+
+}
+
+#mensaje .separadorPremium{
+
+    width:520px;
+
+    display:block;
+
+    margin:55px auto 0;
+
+}
+
+/*======================================================
+ANIMACIÓN MENSAJE
+======================================================*/
+
+#mensaje{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:aparecerMensaje 1.2s ease forwards;
+
+    animation-timeline:view();
+
+    animation-range:entry 20% cover 35%;
+
+}
+
+@keyframes aparecerMensaje{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*======================================================
+MARCO PADRES
+======================================================*/
+
+.cardPadre{
+
+    position:relative;
+
+    width:980px;
+
+    max-width:95%;
+
+    margin:80px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.marcoPadres{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.cardPadre h3{
+
+    position:absolute;
+
+    top:38px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3.2rem;
+
+    color:var(--dorado);
+
+    font-weight:400;
+
+}
+
+.nombresPadres{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2.2rem;
+
+    color:#F8F6F0;
+
+    line-height:1.8;
+
+}
+
+.ampersand{
+
+    display:block;
+
+    margin:-25px 0;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:2.5rem;
+
+    color:var(--dorado);
+
+    text-shadow:
+        0 0 px rgba(212,175,55,.45);
+
+}
+
+/*======================================================
+CSS-12 | PADRINOS
+======================================================*/
+
+#padrinos{
+
+    padding:40px 20px 100px;
+
+    text-align:center;
+
+}
+
+.tituloPadrinos{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.frasePadrinos{
+
+    width:100%;
+
+    max-width:820px;
+
+    margin:0 auto 70px;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+    text-align:center;
+
+}
+
+.cardPadrinos{
+
+    position:relative;
+
+    width:980px;
+
+    max-width:95%;
+
+    margin:70px auto;
+
+}
+
+.nombresPadrinos{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2.2rem;
+
+    color:#F8F6F0;
+
+    line-height:1.8;
+
+}
+
+/*======================================================
+CSS-13 | CEREMONIA RELIGIOSA
+======================================================*/
+
+#ceremonia{
+
+    padding:70px 20px 110px;
+
+    text-align:center;
+
+}
+
+.tituloCeremonia{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+}
+
+.fraseCeremonia{
+
+    max-width:820px;
+
+    margin:0 auto 60px;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+    text-align:center;
+
+}
+
+.botonCeremonia{
+
+    display:inline-block;
+
+    transition:.35s ease;
+
+}
+
+.botonCeremonia img{
+
+    width:340px;
+
+    display:block;
+
+}
+
+.botonCeremonia:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+}
+
+.datosCeremonia{
+
+    margin-top:45px;
+
+}
+
+.datosCeremonia h3{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    color:var(--dorado);
+
+    font-weight:400;
+
+    margin-bottom:20px;
+
+    text-shadow:
+
+        0 0 8px rgba(212,175,55,.35);
+
+}
+
+.datosCeremonia p{
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    color:#F8F6F0;
+
+    margin-bottom:15px;
+
+}
+
+.datosCeremonia span{
+
+    display:block;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--dorado);
+
+}
+
+/*======================================================
+CSS-14 | RECEPCIÓN
+======================================================*/
+
+#recepcion{
+
+    padding:70px 20px 110px;
+
+    text-align:center;
+
+}
+
+.tituloRecepcion{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+}
+
+.fraseRecepcion{
+
+    max-width:820px;
+
+    margin:0 auto 60px;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+    text-align:center;
+
+}
+
+.botonRecepcion{
+
+    display:inline-block;
+
+    transition:.35s ease;
+
+}
+
+.botonRecepcion img{
+
+    width:340px;
+
+    display:block;
+
+}
+
+.botonRecepcion:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+}
+
+.datosRecepcion{
+
+    margin-top:45px;
+
+}
+
+.datosRecepcion h3{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    font-weight:400;
+
+    color:var(--dorado);
+
+    margin-bottom:20px;
+
+}
+
+.datosRecepcion p{
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    color:#F8F6F0;
+
+    margin-bottom:15px;
+
+}
+
+.datosRecepcion span{
+
+    display:block;
+
+    font-family:'Montserrat',sans-serif;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    color:var(--dorado);
+
+}
+
+/*======================================================
+CSS-15 | GALERÍA PREMIUM
+======================================================*/
+
+#galeria{
+
+    padding:60px 20px 110px;
+
+    text-align:center;
+
+}
+
+.tituloGaleria{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.fraseGaleria{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.contenedorGaleria{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:55px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.fotoPremium{
+
+    position:relative;
+
+    width:320px;
+
+    height:430px;
+
+    transition:.45s;
+
+    cursor:pointer;
+
+}
+
+.fotoPremium:hover{
+
+    transform:translateY(-10px) scale(1.04);
+
+    filter:drop-shadow(0 0 12px rgba(212,175,55,.55));
+
+}
+
+.fotoGaleria{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    width:284px;
+
+    height:394px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    z-index:1;
+
+}
+
+.marcoGaleria{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    z-index:2;
+
+    pointer-events:none;
+
+}
+
+.fotoVertical{
+
+    object-fit:contain;
+
+    background:#0A2E73;
+
+    padding:8px;
+
+}
+
+.foto8{
+
+    object-fit:cover;
+
+    transform:scale(1.05) translateY(12px);
+
+    transform-origin:center top;
+
+}
+
+.fotoAlta{
+
+    height:470px;
+
+}
+
+.foto8{
+
+    object-fit:cover;
+
+    object-position:center 10%;
+
+}
+
+/*======================================================
+CSS-16 | CÓDIGO DE VESTIMENTA
+======================================================*/
+
+#vestimenta{
+
+    padding:70px 20px 110px;
+
+    text-align:center;
+
+}
+
+.tituloVestimenta{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+}
+
+.fraseVestimenta{
+
+    max-width:820px;
+
+    margin:0 auto 60px;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.contenedorVestimenta{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+.cardVestimenta{
+
+    width:320px;
+
+    padding:35px;
+
+    border:2px solid rgba(212,175,55,.45);
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.iconoVestimenta{
+
+    width:95px;
+
+    margin-bottom:20px;
+
+}
+
+.cardVestimenta h3{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3rem;
+
+    color:var(--dorado);
+
+    margin-bottom:15px;
+
+}
+
+.cardVestimenta p{
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:1.8rem;
+
+    color:#F8F6F0;
+
+}
+
+.avisoVestimenta{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    padding:22px 35px;
+
+    border:2px solid rgba(212,175,55,.55);
+
+    border-radius:18px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:1.8rem;
+
+    color:#F8F6F0;
+
+    background:rgba(255,255,255,.03);
+
+}/*======================================================
+CSS-16 | CONFIRMACIÓN
+======================================================*/
+
+#confirmacion{
+
+    padding:150px 20px 110px;
+
+    text-align:center;
+
+}
+
+.tituloConfirmacion{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.fraseConfirmacion{
+
+    max-width:820px;
+
+    margin:0 auto 60px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.botonWhatsapp{
+
+    display:inline-block;
+
+    transition:.35s;
+
+}
+
+.botonWhatsapp img{
+
+    width:340px;
+
+}
+
+.botonWhatsapp:hover{
+
+    transform:translateY(-6px) scale(1.04);
+
+}
+
+.nombreConfirmacion{
+
+    margin-top:35px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:3.8rem;
+
+    color:var(--dorado);
+
+}
+
+/*======================================================
+CSS-15 | SUGERENCIA DE REGALO
+======================================================*/
+
+#regalos{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+}
+
+.iconoRegalo{
+
+    width:400px;
+
+    margin-top:-150px;
+
+    margin-bottom:10px;
+
+}
+
+.tituloRegalos{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.fraseRegalos{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.opcionesRegalo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin-top:70px;
+
+}
+
+.tarjetaRegalo{
+
+    width:100%;
+
+    max-width:850px;
+
+    text-align:center;
+
+}
+
+.placaRegalo{
+
+    width:320px;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    transition:.35s;
+
+}
+
+.placaRegalo:hover{
+
+    transform:scale(1.04);
+
+    filter:drop-shadow(0 0 15px rgba(212,175,55,.55));
+
+}
+
+.tarjetaRegalo p{
+
+    max-width:780px;
+
+    margin:0 auto;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:1.9rem;
+
+    line-height:1.9;
+
+    color:#F8F6F0;
+
+}
+/*======================================================
+CSS-17 | PASE ESPECIAL
+======================================================*/
+
+
+.iconoPase{
+
+    width:170px;
+
+    display:block;
+
+    margin:0 auto 20px;
+
+    filter:drop-shadow(0 0 15px rgba(212,175,55,.65));
+
+}
+
+.tituloPase{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.textoPase{
+
+    max-width:820px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.textoPase strong{
+
+    color:var(--dorado);
+
+}
+
+/*======================================================
+CSS-18 | DESPEDIDA
+======================================================*/
+
+#despedida{
+
+    padding:120px 20px 140px;
+
+    text-align:center;
+
+}
+
+.tituloDespedida{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:6.3rem;
+
+    font-weight:400;
+
+    line-height:1.1;
+
+    color:var(--dorado);
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    text-shadow:
+        0 0 10px rgba(212,175,55,.35),
+        0 0 25px rgba(212,175,55,.15);
+
+}
+
+.fraseDespedida{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+    font-family:'Libre Baskerville',serif;
+
+    font-style:italic;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    color:#F8F6F0;
+
+}
+
+.nombreDespedida{
+
+    margin-top:70px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:5.2rem;
+
+    font-weight:400;
+
+    color:var(--dorado);
+
+    text-shadow:
+        0 0 8px rgba(255,215,120,.9),
+        0 0 20px rgba(212,175,55,.7),
+        0 0 35px rgba(212,175,55,.45);
+
+}
+
+.coronaDespedida{
+
+    width:400px;
+
+    display:block;
+
+    margin:-175px auto 25px;
+
+    filter:drop-shadow(0 0 12px rgba(212,175,55,.6));
 
 }

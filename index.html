@@ -1,293 +1,866 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Astrid Abigail Ibarra Galindo | XV Años</title>
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" href="style.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Mis XV Años | Astrid Abigail Ibarra Galindo</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
 
-<body>
+<body class="bloqueado">
 
-<div id="intro">
-...
+<div class="estrellas">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
 </div>
-    <div class="intro-content">
 
-        <h1>Astrid Abigail Ibarra Galindo</h1>
+<!-- =======================================================
+     PANTALLA DE BIENVENIDA
+======================================================= -->
 
-        <h2>Mis XV Años</h2>
+<section id="bienvenida">
 
-        <button id="abrirInvitacion">
-...
-</button>
-            
+    <div class="contenidoBienvenida">
+
+        <img
+            id="sobre"
+            class="sobre"
+            src="img/sobres/sobre-cerrado.png"
+            alt="Sobre">
+
+        <img
+            id="sello"
+            class="sello"
+            src="img/iconos/sello-xv.png"
+            alt="Sello">
+
+        <div id="tarjeta"
+             class="tarjeta">
+
+            <img
+                src="img/fondos/portada.png"
+                class="portadaTarjeta"
+                alt="Portada">
+
+        </div>
+
+        <p class="textoAbrir">
+
+            ✦ Toca el sello para abrir la invitación ✦
+
+        </p>
+
     </div>
 
-</div>
+    <audio
+        id="musica"
+        src="quince.mp3">
+    </audio>
 
-<div class="petalos"></div>
 
-<!-- Audio -->
+</section>
 
-<audio id="musicaFondo">
-...
-</audio>    
-<source src="quince.mp3" type="audio/mpeg">
-</audio>
+<!-- =======================================================
+     PORTADA
+======================================================= -->
 
-<!-- PORTADA -->
+<section id="portada">
 
-<section class="hero">
+    <div class="flechaScroll">
 
-<img src="img/portada.png" alt="Portada Astrid" class="portada">
+        <img
+            src="img/iconos/separador-premium.png"
+            class="separadorPremium"
+            alt="Separador">
 
-<div class="overlay">
+        <img
+            src="img/iconos/flecha-premium.png"
+            class="flechaPremium"
+            alt="Deslizar hacia abajo">
 
-<h1>Astrid Abigail Ibarra Galindo</h1>
+    </div>
 
-<h2>Mis XV Años</h2>
+</section>
 
-<p class="frase">
-"Hoy dejo atrás los sueños de niña para comenzar a escribir una nueva historia."
-</p>
+<!--======================================================
+CONTADOR PREMIUM
+=======================================================-->
 
-<p class="fecha">
-22 de Agosto de 2026
-</p>
+<section id="contador">
+
+    <h2 class="tituloContador">
+
+        Faltan
+
+    </h2>
+
+    <div class="contenedorContador">
+
+        <div class="cajaTiempo">
+
+     <img
+        src="img/iconos/marco-contador.png"
+        class="marcoContador"
+        alt="Marco">
+
+            <span id="dias">00</span>
+
+            <small>DÍAS</small>
+
+        </div>
+
+        <div class="cajaTiempo">
+
+     <img
+        src="img/iconos/marco-contador.png"
+        class="marcoContador"
+        alt="Marco">
+
+
+            <span id="horas">00</span>
+
+            <small>HORAS</small>
+
+        </div>
+
+        <div class="cajaTiempo">
+
+     <img
+        src="img/iconos/marco-contador.png"
+        class="marcoContador"
+        alt="Marco">
+
+
+            <span id="minutos">00</span>
+
+            <small>MINUTOS</small>
+
+        </div>
+
+        <div class="cajaTiempo">
+
+     <img
+        src="img/iconos/marco-contador.png"
+        class="marcoContador"
+        alt="Marco">
+
+
+            <span id="segundos">00</span>
+
+            <small>SEGUNDOS</small>
+
+        </div>
+
+    </div>
+
+    <p class="fraseContador">
+
+    Para celebrar uno de los días<br>
+
+    más importantes de mi vida
+
+    </p>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+<div class="estrellasContador">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 
 </div>
 
 </section>
 
-<!-- CUENTA REGRESIVA -->
+<!-- =======================================================
+     MENSAJE
+======================================================= -->
 
-<section class="contador">
+<section id="mensaje">
 
-<h2>Faltan</h2>
+    <h2 class="tituloMensaje">
 
-<div id="countdown">
+        Mi sueño se hace realidad
 
-<div>
-<span id="dias">0</span>
-<p>Días</p>
-</div>
+    </h2>
 
-<div>
-<span id="horas">0</span>
-<p>Horas</p>
-</div>
+    <p class="textoMensaje">
 
-<div>
-<span id="minutos">0</span>
-<p>Minutos</p>
-</div>
+        Hay momentos en la vida que permanecen para siempre en el corazón.
+        Hoy, con inmensa alegría, deseo compartir contigo la ilusión de celebrar
+        mis XV años, una etapa que marca el comienzo de nuevos sueños, nuevas
+        experiencias y un futuro lleno de esperanza.
 
-<div>
-<span id="segundos">0</span>
-<p>Segundos</p>
-</div>
+    </p>
 
-</div>
+    <p class="textoMensaje">
 
-</section>
+        Tu presencia hará de este día un recuerdo aún más especial.
+        Será un honor contar contigo para vivir juntos esta hermosa celebración.
 
-<!-- MENSAJE -->
+    </p>
 
-<section class="mensaje">
-
-<h2>Con la bendición de Dios y de mis padres</h2>
-
-<p>
-IVONNE C. GALINDO BADILLO
-<br>
-&
-<br>
-ALFREDO IBARRA SÁNCHEZ
-</p>
-
-<p>
-Tenemos el honor de invitarte a celebrar
-los XV años de nuestra querida hija.
-</p>
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
 
 </section>
 
-<!-- PADRINOS -->
+<!-- =======================================================
+     PADRES
+======================================================= -->
 
-<section class="padrinos">
+<section id="padres">
 
-<h2>Padrinos</h2>
+    <h2 class="tituloPadres">
 
-<p>
-Julio C. Sánchez Reyes
-<br>
-&
-<br>
-Norma Robles Ulibarri
+    Con el amor<br>
+    de mis padres
+
+</h2>
+
+    <p class="frasePadres">
+
+        Con profundo amor y gratitud, agradezco a quienes han guiado cada uno de mis pasos y han hecho posible este hermoso momento.
+
+    </p>
+
+    <div class="contenedorPadres">
+
+        <div class="cardPadre">
+
+            <img
+               src="img/iconos/marco-papas.png"
+               class="marcoPadres"
+               alt="Marco Premium">
+
+        
+
+            <p class="nombresPadres">
+
+    Alfredo Ibarra Sanchez
+
+    <span class="ampersand">&</span>
+
+    Ivonne C. Galindo Badillo
+
 </p>
+
+        </div>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
 
 </section>
 
-<!-- MISA -->
+<!-- =======================================================
+     PADRINOS
+======================================================= -->
 
-<section class="evento">
+<section id="padrinos">
 
-<h2>Ceremonia Religiosa</h2>
+    <h2 class="tituloPadrinos">
 
-<h3>5:00 PM</h3>
+    Con la bendición<br>
+    de mis padrinos
 
-<p>
-Parroquia Santiago Apóstol en Atepetlac
-</p>
+</h2>
 
-<p>
-Santiaguito, Cam. de Santiaguito 71,
-Gustavo A. Madero,
-07640 Ciudad de México, CDMX
-</p>
+    <p class="frasePadrinos">
 
-<a
-href="https://share.google/4Vax0o8r4s9qtmwtI"
-target="_blank"
-class="boton">
-Ver ubicación
+        Con cariño y gratitud, agradezco a quienes con su apoyo,
+        consejos y cariño forman parte de este momento tan especial
+        en mi vida.
+
+    </p>
+
+    <div class="cardPadrinos">
+
+        <img
+            src="img/iconos/marco-papas.png"
+            class="marcoPadres"
+            alt="Marco Premium">
+
+        <div class="nombresPadrinos">
+
+            Julio C. Sanchez Reyes
+
+            <span class="ampersand">&</span>
+
+            Norma Robles Ulibarri
+
+        </div>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+</section>
+
+<!-- =======================================================
+     CEREMONIA
+======================================================= -->
+
+<section id="ceremonia">
+
+    <h2 class="tituloCeremonia">
+
+        Acompáñame a recibir<br>
+        la bendición de Dios
+
+    </h2>
+
+    <p class="fraseCeremonia">
+
+        Con gran ilusión te invito a acompañarme en la celebración de la Santa Misa,
+        donde daré gracias a Dios por este hermoso momento que marcará una nueva etapa
+        en mi vida.
+
+    </p>
+
+    <a href="https://maps.app.goo.gl/BbFK5L4bYdSV2UW9A"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="botonCeremonia">
+
+    <img
+        src="img/iconos/boton-ceremonia.png"
+        alt="Ceremonia">
+
 </a>
 
+    <div class="datosCeremonia">
+
+        <h3>Parroquia Santiago Apóstol en Atepetlac</h3>
+
+        <p>22 de Agosto de 2026</p>
+
+        <span>5:00 PM</span>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
 </section>
 
-<!-- RECEPCIÓN -->
+<!-- =======================================================
+     RECEPCIÓN
+======================================================= -->
 
-<section class="evento">
+<section id="recepcion">
 
-<h2>Recepción</h2>
+    <h2 class="tituloRecepcion">
 
-<h3>8:30 PM</h3>
+        Celebremos juntos<br>
+        este gran día
 
-<p>
-Salón Mónaco Jardín
+    </h2>
+
+    <p class="fraseRecepcion">
+
+        Después de la ceremonia religiosa, será un honor compartir contigo una noche llena de alegría, música y momentos inolvidables.
+
+    </p>
+
+    <a href="https://maps.app.goo.gl/uBRk1nG1YmmqK17J6"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="botonRecepcion">
+
+    <img
+        src="img/iconos/boton-recepcion.png"
+        alt="Recepción">
+
+</a>
+    <div class="datosRecepcion">
+
+        <h3>
+
+            Salon de fiestas Monaco Jardin
+
+        </h3>
+
+        <p>
+
+            22 de Agosto de 2026
+
+        </p>
+
+        <span>
+
+            8:30 PM
+
+        </span>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+</section>
+
+<!-- =======================================================
+     GALERÍA
+======================================================= -->
+
+<section id="galeria">
+
+    <h2 class="tituloGaleria">
+
+        Un recorrido<br>
+        por mis recuerdos
+
+    </h2>
+
+    <p class="fraseGaleria">
+
+        Cada fotografía guarda un instante que permanecerá
+        por siempre en mi corazón.
+
+    </p>
+
+    <div class="contenedorGaleria">
+
+        <!-- FOTO 1 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto1.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 2 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto2.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 3 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto3.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 4 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto4.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 5 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto5.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 6 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto6.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 7 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto7.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 8 -->
+
+        <div class="fotoPremium fotoAlta">
+
+        <img src="img/galeria/foto8.jpeg" class="fotoGaleria foto8">
+
+        <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+        <!-- FOTO 9 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto9.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 10 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto10.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 11 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto11.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+        <!-- FOTO 12 -->
+
+        <div class="fotoPremium">
+
+            <img src="img/galeria/foto12.jpeg" class="fotoGaleria">
+
+            <img src="img/iconos/marco-galeria.png" class="marcoGaleria">
+
+        </div>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+</section>
+
+<!-- =======================================================
+     CÓDIGO DE VESTIMENTA
+======================================================= -->
+
+<section id="vestimenta">
+
+    <h2 class="tituloVestimenta">
+
+        Tu presencia hará<br>
+        brillar esta noche
+
+    </h2>
+
+    <p class="fraseVestimenta">
+
+        Te invitamos a vestir de manera formal para acompañarnos
+        en esta celebración tan especial.
+
+    </p>
+
+    <div class="contenedorVestimenta">
+
+        <div class="cardVestimenta">
+
+            <img
+                src="img/iconos/icono-dama.png"
+                class="iconoVestimenta"
+                alt="Damas">
+
+            <h3>Damas</h3>
+
+            <p>Gala - Coctel</p>
+
+        </div>
+
+        <div class="cardVestimenta">
+
+            <img
+                src="img/iconos/icono-caballero.png"
+                class="iconoVestimenta"
+                alt="Caballeros">
+
+            <h3>Caballeros</h3>
+
+            <p>Formal- Elegante</p>
+
+        </div>
+
+    </div>
+
+    <div class="avisoVestimenta">
+
+        El color <strong>Azul Rey</strong> está reservado exclusivamente para la quinceañera.
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+</section>
+
+<!-- ======================================================
+     SUGERENCIA DE REGALO
+====================================================== -->
+
+<section id="regalos">
+
+    <img
+        src="img/iconos/regalo dorado.png"
+        class="iconoRegalo"
+        alt="Regalo">
+
+    <h2 class="tituloRegalos">
+
+        Sugerencia de regalo
+
+    </h2>
+
+    <p class="fraseRegalos">
+
+        Tu presencia será el mejor regalo para celebrar este momento tan especial.
+
+        <br><br>
+
+        Si además deseas obsequiarme un detalle, con mucho cariño será bien recibido.
+
+    </p>
+
+    <div class="opcionesRegalo">
+
+        <div class="tarjetaRegalo">
+
+            <img
+                src="img/iconos/icono-sobre.png"
+                class="placaRegalo"
+                alt="Lluvia de sobres">
+
+            <p>
+
+                El día del evento contaremos con una lluvia de sobres,
+                donde, si así lo deseas, podrás realizar una aportación.
+
+            </p>
+
+        </div>
+
+        <div class="tarjetaRegalo">
+
+            <img
+                src="img/iconos/icono-mesa.png"
+                class="placaRegalo"
+                alt="Mesa de regalos">
+
+            <p>
+
+                Asimismo, tendremos una mesa de regalos
+                para recibir con mucho gusto ese detalle
+                especial que hayas elegido para mí.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
+
+</section>
+
+<!-- =======================================================
+     CONFIRMACIÓN DE ASISTENCIA
+======================================================= -->
+
+<section id="confirmacion">
+
+    <h2 class="tituloConfirmacion">
+
+        Espero contar<br>
+        con tu presencia
+
+    </h2>
+
+    <p class="fraseConfirmacion">
+
+    Tu presencia es muy importante para nosotros.<br><br>
+
+    Agradeceremos que nos confirmes tu asistencia
+    antes del <strong>1 de agosto de 2026</strong>.
+
 </p>
 
-<p>
-Eje 5 Norte,
-Calz. San Juan de Aragón 120,
-15 de Agosto,
-Gustavo A. Madero,
-07070 Ciudad de México, CDMX
-</p>
+    <a href="https://wa.me/525529159237?text=Hola%20Sra.%20Ivonne%20Galindo%20Badillo,%20confirmo%20mi%20asistencia%20a%20los%20XV%20Años%20de%20Astrid%20Abigail.%20Muchas%20gracias."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="botonWhatsapp">
 
-<a
-href="https://share.google/kCEJfO6QqURSJ4Lgk"
-target="_blank"
-class="boton">
-Ver ubicación
+    <img
+        src="img/iconos/boton-whatsapp.png"
+        alt="Confirmar asistencia">
+
 </a>
 
-</section>
+    <p class="nombreConfirmacion">
 
-<!-- GALERIA -->
-
-<section class="galeria">
-
-<h2>Mi Historia</h2>
-
-<div class="grid">
-
-<img src="img/foto1.jpeg" alt="">
-<img src="img/foto2.jpeg" alt="">
-<img src="img/foto3.jpeg" alt="">
-<img src="img/foto4.jpeg" alt="">
-<img src="img/foto5.jpeg" alt="">
-<img src="img/foto6.jpeg" alt="">
-<img src="img/foto7.jpeg" alt="">
-<img src="img/foto9.jpeg" alt="">
-<img src="img/foto10.jpeg" alt="">
-<img src="img/foto11.jpeg" alt="">
-
-</div>
-
-</section>
-
-<!-- VESTIMENTA -->
-
-<section class="vestimenta">
-
-<h2>Código de Vestimenta</h2>
-
-<p>
-Formal Elegante
-</p>
-
-<p style="margin-top:20px;color:#ffd700;font-weight:bold;">
-
-El color azul rey está reservado exclusivamente para la quinceañera.
-
-Agradecemos evitar prendas en este tono.
+    Ivonne C. Galindo Badillo
 
 </p>
 
-</section>
-
-<section class="pase">
-
-<h2>Pase de Honor</h2>
-
-<div class="ticket">
-
-<div class="ticket-top">
-INVITACIÓN ESPECIAL
-</div>
-
-<h3>PASE GENERAL</h3>
-
-<p>
-Este pase es válido para una familia.
-</p>
-
-<p>
-Astrid Abigail Ibarra Galindo
-</p>
-
-<p>
-22 de Agosto de 2026
-</p>
-
-</div>
+    <img
+        src="img/iconos/separador-premium.png"
+        class="separadorPremium"
+        alt="Separador">
 
 </section>
 
-<!-- CONFIRMAR -->
+<!-- ======================================================
+     PASE ESPECIAL
+====================================================== -->
 
-<section class="confirmacion">
+<section id="paseEspecial">
 
-<h2>Confirma tu asistencia</h2>
 
-<a
-href="https://wa.me/525529159237"
-target="_blank"
-class="whatsapp">
-Confirmar por WhatsApp
-</a>
+    <h2 class="tituloPase">
+
+        ¡Pase Especial!
+
+    </h2>
+
+    <p class="textoPase">
+
+        El día del evento será necesario presentar tu
+        <strong>Pase Especial</strong> al ingresar a la recepción
+        del salón.
+
+        <br><br>
+
+        Te recomendamos conservarlo y tenerlo listo para
+        facilitar tu acceso.
+
+    </p>
 
 </section>
 
-<!-- FINAL -->	
+<!-- ======================================================
+     DESPEDIDA
+====================================================== -->
 
-<section class="final">
+<section id="despedida">
 
-<h2>¡Te Esperamos!</h2>
+    <img
+    src="img/iconos/corona-dorada.png"
+    class="coronaDespedida"
+    alt="Corona">
 
-<p>
-Gracias por formar parte de este momento tan especial.
-</p>
+
+    <h2 class="tituloDespedida">
+
+        ¡Gracias!
+
+    </h2>
+
+    <p class="fraseDespedida">
+
+        Gracias por acompañarme en este momento tan especial de mi vida.
+
+        <br><br>
+
+        Con mucha ilusión, espero compartir contigo una noche llena de alegría,
+        emociones y recuerdos inolvidables.
+
+        <br><br>
+
+        ¡Te espero para celebrar juntos mis XV años!
+
+    </p>
+
+    <h3 class="nombreDespedida">
+
+        Astrid Abigail<br>
+        Ibarra Galindo
+
+    </h3>
 
 </section>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

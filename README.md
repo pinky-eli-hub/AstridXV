@@ -1,2 +1,2 @@
-# AstridXV
-Invitación XV Años Astrid Abigail Ibarra Galindo
+# AstridXV-V2
+Invitación XV Astrid Abigail Ibarra Galindo
