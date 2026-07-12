@@ -2251,3 +2251,23 @@ CSS-18 | DESPEDIDA
     filter:drop-shadow(0 0 12px rgba(212,175,55,.6));
 
 }
+
+@media (max-width:768px){
+
+    .lineaPremium{
+
+        width:95%;
+
+        gap:10px;
+
+    }
+
+    .lineaPremium span{
+
+        flex:1;
+
+        max-width:none;
+
+    }
+
+}
