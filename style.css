@@ -2271,3 +2271,105 @@ CSS-18 | DESPEDIDA
     }
 
 }
+
+/* ===========================
+   VERSIÓN MÓVIL
+=========================== */
+
+@media (max-width:768px){
+
+/* Márgenes generales */
+
+section{
+padding-left:18px;
+padding-right:18px;
+box-sizing:border-box;
+}
+
+/* =========================
+   LÍNEAS DORADAS
+========================= */
+
+.lineaPremium{
+width:100%;
+gap:10px;
+margin:28px 0;
+}
+
+.lineaPremium span{
+flex:1;
+max-width:none;
+}
+
+/* =========================
+   PADRES
+========================= */
+
+.contenedorPadres{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.cardPadre{
+width:100%;
+max-width:100%;
+padding:35px 20px;
+box-sizing:border-box;
+}
+
+.marcoPadres{
+width:100%;
+height:auto;
+}
+
+.nombresPadres{
+width:100%;
+font-size:32px;
+line-height:1.4;
+padding:0 10px;
+box-sizing:border-box;
+}
+
+/* =========================
+   PADRINOS
+========================= */
+
+.cardPadrinos{
+width:100%;
+max-width:100%;
+padding:35px 20px;
+box-sizing:border-box;
+}
+
+.nombresPadrinos{
+width:100%;
+font-size:32px;
+line-height:1.4;
+padding:0 10px;
+box-sizing:border-box;
+}
+
+/* =========================
+   TEXTOS
+========================= */
+
+.textoMensaje,
+.frasePadres,
+.frasePadrinos,
+.fraseCeremonia,
+.fraseRecepcion,
+.fraseGaleria,
+.fraseVestimenta,
+.fraseRegalos,
+.fraseConfirmacion,
+.textoPase,
+.fraseDespedida{
+
+width:100%;
+padding:0 8px;
+box-sizing:border-box;
+
+}
+
+}
